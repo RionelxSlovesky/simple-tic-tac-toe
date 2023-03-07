@@ -1,0 +1,39 @@
+*, *::before, *::after {box-sizing: border-box;}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    width: 80%;
+    margin: auto;
+    margin-top: 5vh;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.check {
+    min-height: 30vh;
+    border: 2px solid black;
+    font-size: 30vh;
+    text-align: center;
+}
+
+.t {
+    border-top: 0;
+}
+
+.b {
+    border-bottom: 0;
+}
+
+.l {
+    border-left: 0;
+}
+
+.r {
+    border-right: 0;
+}
