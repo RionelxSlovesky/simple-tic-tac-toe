@@ -6,7 +6,12 @@ let count = 0
 
 board.addEventListener('click', event => {
 
+        if(event.target.hasChildNodes()) {
+            return;
+        }
+
         const p = document.createElement('p')
+
         if(count%2==0) {
             p.innerText = 'X'
             count++
@@ -17,6 +22,7 @@ board.addEventListener('click', event => {
         
         event.target.innerHTML = ''
         event.target.appendChild(p)
+        
 
 })
 
